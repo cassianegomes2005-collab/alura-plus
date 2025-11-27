@@ -1,0 +1,152 @@
+:root {
+    /* serve para declarar cores e variaveis para não ter que ficar digitando o numero das cores em todo o codigo */
+
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #C0C0C0;
+    --botao-azul: #167BF7;
+    --cor-de-fundo: #00030C;
+    --fonte-principal: 'Inter'; 
+}
+
+
+body {
+    /* as cores do corpo do cod*/
+    background-color: var(--cor-de-fundo);
+    color:var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 16px; /* tamalho da letra */
+    font-weight:400; /* grossura da fonte */
+}
+*{
+    /* para zerar a margem ao ver a pagina  */
+    margin:0;
+    padding:0;
+}
+.principal{ /* chamei a sesação principal do html */
+    background-image: url('img/Background.png'); /*serve para chamamos a imagem, direto do css é nescessario o uso de url e colocar o nome do diretorio entre parenteses, alem disso: é só para imagem não tão relevantes para o usuario, img de fundo*/
+    background-repeat: no-repeat; /* para não repetir a imagem caso ocorra*/
+    background-size: contain; /* para ajustar o espaçamento  */
+    align-items:center; /* para aninhar intens no centro */
+    text-align:center;
+    /* alinhar o texto dentro do bloco container */
+    
+    
+}
+.container{
+    /* declara a altura e largura da section  */
+    height: 100vh; /* altura */
+    display: grid;/* não é texto, é um comando que transforma um elemento em um layout de grade (grid). */
+    grid-template-columns: 50% 50%; /* serve para dividir a pg em uma quantidade de vezes é visivel no inspencionar/ctrl + shift   */
+
+
+}
+.container__botao{
+    /* chamar a tag botão do html e agora vamos estilizar */
+    background-color: var(--botao-azul);
+    border-radius: 5px; /* bordas do botão arredondadas  */
+    padding:1em; /* padding serve para fazer uma margem do botão */
+    color: var(--branco-principal);
+    display: block;  /* para fazer o botão ocupar todo o bloco da tela depois vc ajeita  */
+    text-decoration:none;
+    /* para tirar o traço debaixo do texto do botão  */
+    margin-bottom:1em; 
+    /* epaçamento entre os botoes */
+
+
+}
+.botao_secundario{
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+
+}
+.container__aviso{
+    font-size:12px;
+    color:var(--cinza-secundario)
+
+}
+.container__titulo{
+    font-size: 28px;
+    font-weight: 700;
+}
+.container__imagem{
+    margin: 1em 0 2em 0;
+    /* Valor	Significado
+    1em: margem em cima
+    0: margem direita
+    2em: margem embaixo
+    0: margem esquerda */
+        
+}
+.container__caixa{
+    margin: 0 6em;
+}
+.secundario__imagem{
+    width: 80%;
+
+}
+.secundario{
+    align-items:center;
+    margin: 0 10em;
+
+}
+.descricao__titulo {
+    font-family: var(--fonte-principal);
+    font-weight: 1000S;
+    font-size: 48px;
+    color:var(--branco-principal);
+    margin-bottom: 0.1em;
+}
+.descricao__texto{
+    font-family: var(--fonte-principal);
+    color:var(--cinza-secundario);
+    font-size: 17px;
+    
+
+}
+.secundario__botao{
+    display: inline-block;
+    margin-top:1em;
+}
+
+.container__descricao{
+    padding: 2em;
+
+}
+.dispositivos__listas{
+    display:flex;
+    justify-content: center;
+    list-style-type:none; /* tirar os etilo da lista  */
+    margin: 5em 0;
+
+}
+.dispositivos {
+
+    text-align: center;
+}
+.dispositivos__titulo{
+    font-size: 48px;
+    color:var(--branco-principal);
+
+}
+
+.rodape__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 1em;
+}
+
+.lista__link{
+    text-decoration: none;
+    color: var(--branco-principal);
+    margin-left: 1em;
+}
+.rodape__texto {
+    margin: 1em 0;
+    color: var(--cinza-secundario);
+    font-size: 14px;
+}
+.rodape {
+    text-align: center;
+    margin: 5em 3em;
+}
